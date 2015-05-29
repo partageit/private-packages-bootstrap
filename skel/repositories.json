@@ -1,0 +1,11 @@
+{
+	"name": "Private packages",
+	"homepage": "http://localhost/privates-packages/web/",
+	"repositories": [
+		{
+			"type": "git",
+			"url": "http://url/git/rest-server.git/"
+		}
+	],
+	"require-all": true
+}

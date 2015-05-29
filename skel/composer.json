@@ -1,0 +1,11 @@
+{
+	"name": "private-packages/bootstrap",
+	"description": "This is a local packagist-like",
+	"require-dev": {
+		"composer/composer": "dev-master",
+		"composer/satis": "dev-master"
+	},
+	"scripts": {
+		"build": "\"./vendor/bin/satis\" build repositories.json web"
+	}
+}

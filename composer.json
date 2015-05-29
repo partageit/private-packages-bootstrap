@@ -1,0 +1,13 @@
+{
+	"name": "partageit/private-packages-bootstrap",
+	"description": "Bootstrap local packagist-like with Satis",
+	"require": {
+        "php": ">=5.3.2"
+	},
+	"license": "MIT",
+	"scripts": {
+		"post-create-project-cmd": [
+			"php \"./private-packages-bootstrap/bootstrap.php\""
+		]
+	}
+}
