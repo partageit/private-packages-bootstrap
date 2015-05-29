@@ -7,10 +7,9 @@ Private packages is a local Packagist-like bootstrap, using Satis to provide loc
 
 ## Bootstrap the project
 
-```
-composer create-project partageit/private-packages-bootstrap
-composer install
-```
+    composer create-project partageit/private-packages-bootstrap --stability=dev --keep-vcs
+
+If `composer` is not global, start the `composer install` manually
 
 ## Configuration
 
