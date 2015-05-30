@@ -2,14 +2,16 @@
 
 ## Overview
 
-Private packages is a local Packagist-like bootstrap, using Satis to provide local repositories.
+Private packages Bootstrap bootstraps local Packagist-like, using Satis to provide local repositories.
 
 
 ## Bootstrap the project
 
-    composer create-project partageit/private-packages-bootstrap --stability=dev --keep-vcs
+    composer create-project partageit/private-packages-bootstrap --keep-vcs
 
-If `composer` is not global, start the `composer install` manually
+If `composer` is not global, start the `composer install` manually.
+
+You may have to delete the remaining empty `private-packages-bootstrap` folder.
 
 ## Configuration
 

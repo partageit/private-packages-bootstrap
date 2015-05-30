@@ -35,7 +35,7 @@ In other projects' composer.json:
 
 ## Packages list update
 
-Edit `repositories.json` and add the Git repository.
+Edit `repositories.json` and add the Git repositories.
 
 And then, update the packages list:
 
@@ -45,7 +45,7 @@ Version this repository when required.
 
 ## When to build the packages list?
 
-The packages list should be re-built when a repository is updated, i.e. when changes are pushed.
+The packages list should be re-built when a repository is updated, i.e. when new tags are created.
 
 ## References
 

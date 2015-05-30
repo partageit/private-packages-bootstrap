@@ -4,7 +4,7 @@
 	"repositories": [
 		{
 			"type": "git",
-			"url": "http://url/git/rest-server.git/"
+			"url": "http://url/my-repo.git/"
 		}
 	],
 	"require-all": true

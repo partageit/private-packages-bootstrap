@@ -7,7 +7,7 @@
 	"license": "MIT",
 	"scripts": {
 		"post-create-project-cmd": [
-			"php \"./private-packages-bootstrap/bootstrap.php\""
+			"php bootstrap.php"
 		]
 	}
 }

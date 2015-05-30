@@ -5,6 +5,8 @@
 
 echo "Starting bootstrap files copy...\n";
 
+chdir("../");
+
 if (!file_exists("private-packages-bootstrap")) {
 	echo "Folder 'private-packages-bootstrap' not found\n";
 	exit(1);
