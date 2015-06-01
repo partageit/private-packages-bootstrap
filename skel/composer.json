@@ -6,6 +6,8 @@
 		"composer/satis": "dev-master"
 	},
 	"scripts": {
-		"build": "\"./vendor/bin/satis\" build repositories.json web"
+		"build": "\"./vendor/bin/satis\" build repositories.json web",
+		"enable-rebuild-hook": "cp -f rebuild.php web/rebuild.php",
+		"disable-rebuild-hook": "rm -f web/rebuild.php"
 	}
 }

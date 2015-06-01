@@ -1,8 +1,8 @@
-# Private packages bootstrap
+# Private packages
 
 ## Overview
 
-Private packages is a local Packagist bootstrap, using Satis to provide local repositories.
+Provide local repositories using Satis.
 
 ## Installation
 
@@ -18,7 +18,7 @@ And build the packages list:
 
 ## Access
 
-The packages list/documentation can be accessed via `http://<host>/private-packages/web/`.
+The packages list can be accessed via `http://<host>/private-packages/web/`.
 
 ## Usage
 
@@ -46,6 +46,33 @@ Version this repository when required.
 ## When to build the packages list?
 
 The packages list should be re-built when a repository is updated, i.e. when new tags are created.
+
+### Automatic build
+
+If your Web server is able to interpret PHP scripts, you can enable the rebuild function:
+
+    composer enable-rebuild-hook
+
+This command-line copies the `rebuild.php` file in the `web` folder, and makes it available at this address: `http://<host>/private-packages/web/rebuild.php`.
+
+You can access it manually, or start it from the Git `post-receive` hook, for example:
+
+```php
+#!/usr/bin/env php
+
+<?php
+$rebuildResult = file_get_contents("http://uri/private-packages/rebuild.php");
+
+$rebuildResult = explode("\n", $rebuildResult);
+
+if ($rebuildResult[0] === "success") {
+	echo "Private packages rebuilt!";
+} else {
+	echo "Private packages rebuild failed";
+}
+
+echo "\n";
+```
 
 ## References
 
